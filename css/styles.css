@@ -1,0 +1,220 @@
+/* General Page Reset & Fonts */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #1a202c;
+    background-color: #ffffff; /* Pure white page background */
+}
+
+/* Base Headings */
+h1, h2, h3 {
+    color: #0f172a;
+    margin-bottom: 0.8rem;
+}
+
+h2 {
+    border-bottom: 2px solid #0f172a;
+    padding-bottom: 0.3rem;
+}
+
+/* Header & Navigation Bar (Dark Charcoal / Slate) */
+header {
+    background-color: #0f172a; /* Rich dark header */
+    color: #ffffff;
+    padding: 1.8rem 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 1.2rem;
+}
+
+nav a {
+    color: #f8fafc;
+    background-color: #1e293b; /* Darker button base */
+    padding: 0.55rem 1rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    border: 1px solid #334155;
+    transition: all 0.3s ease;
+}
+
+/* Navigation Hover State */
+nav a:hover, nav a:focus {
+    background-color: #ffffff;
+    color: #0f172a;
+    border-color: #ffffff;
+}
+
+/* Main Content & Section Box Model */
+main {
+    max-width: 920px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Content Sections (Light Grey Cards over White Background) */
+.content-section {
+    background-color: #f8fafc; /* Subtle light grey card fill */
+    padding: 1.8rem;
+    margin-bottom: 1.8rem;
+    border: 1px solid #e2e8f0; /* Crisp subtle border */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Highlighted Section */
+#about {
+    background-color: #f1f5f9;
+    border-left: 5px solid #0f172a;
+}
+
+/* Lists and Tables */
+ul, ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background-color: #ffffff;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #334155;
+}
+
+th, td {
+    border: 1px solid #cbd5e0;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background-color: #0f172a;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+tr:hover {
+    background-color: #e2e8f0;
+}
+
+/* Responsive Images, Video, and Gallery */
+img, video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
+figure {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 0.6rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+figcaption {
+    font-size: 0.85rem;
+    color: #475569;
+    margin-top: 0.5rem;
+}
+
+audio {
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+/* Contact Form */
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    color: #1e293b;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #0f172a;
+    box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.15);
+}
+
+button[type="submit"] {
+    background-color: #0f172a;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 0.8rem 1.8rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #334155;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.8rem;
+    background-color: #0f172a;
+    color: #ffffff;
+    margin-top: 3rem;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innocent Mbalakawe - Personal Web Page</title>
+    <!-- Linking external CSS stylesheet using a relative path -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Innocent Mbalakawe's Student Portfolio</h1>
+        <!-- Main Navigation Bar -->
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#plan">Learning Plan</a>
+            <a href="#photos">My Photos</a>
+            <a href="#media">My Media</a>
+            <a href="#contact">Contact</a>
+            <!-- External link to web development resources -->
+            <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+
+        <!-- About Me Section -->
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <p>
+                Hello! My name is Innocent Mbalakawe, a dedicated university student pursuing studies in computer science. I am passionate about software engineering, problem-solving, and web development. Welcome to my personal website, where I showcase my academic progress, personal interests, media presentations, and practical coding exercises.
+            </p>
+        </section>
+
+        <!-- My Hobbies Section -->
+        <section id="hobbies" class="content-section">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Programming and developing software projects</li>
+                <li>Watching football matches and following sports analytics</li>
+                <li>Creative writing and listening to music</li>
+            </ul>
+        </section>
+
+        <!-- My Learning Plan Section -->
+        <section id="plan" class="content-section">
+            <h2>My Learning Plan</h2>
+            <p>Steps I will take to improve my web development skills:</p>
+            <ol>
+                <li>Practice HTML5 and CSS3 layout exercises daily to build muscle memory.</li>
+                <li>Learn JavaScript to introduce dynamic interactivity and functional logic to web pages.</li>
+                <li>Study frontend frameworks and practice version control by sharing projects on GitHub.</li>
+            </ol>
+
+            <h3>Weekly Learning Schedule</h3>
+            <table>
+                <caption>Weekly Web Development Practice Schedule</caption>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Practice Task</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML5 Semantics</td>
+                        <td>Build structured layouts using section and nav tags.</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>CSS Styling & Layouts</td>
+                        <td>Apply colors, borders, and flexbox styles to components.</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Media & Forms</td>
+                        <td>Integrate video, audio players, and input validation fields.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- My Photos Section -->
+        <section id="photos" class="content-section">
+            <h2>My Photos</h2>
+            <p>A collection of personal photos.</p>
+            <div class="gallery">
+                <figure>
+                    <img src="images/photo1.jpg" alt="Back in Kabwe, my hometown.">
+                    <figcaption>At home wearing my favourite team's football jersey.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/photo2.jpg" alt="With my Elder brother Fredrick.">
+                    <figcaption>Posed for a pic with my elder brother after church.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/photo3.jpg" alt="Back in Lufunsa.">
+                    <figcaption>This was in Lufunsa during my first year second semester holiday.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- My Media Section -->
+        <section id="media" class="content-section">
+            <h2>My Media</h2>
+            
+            <h3>Self-Introduction Video</h3>
+            <video controls width="100%">
+                <source src="videos/intro.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+            <p><strong>Video Summary:</strong> Hi, my name is Innocent Mbalakawe. I am taking ICT251 Web Technologies. In this course, I aim to master web layout design and build clean, functional web applications.</p>
+
+            <h3>Audio Introduction</h3>
+            <audio controls>
+                <source src="videos/voice.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p><strong>Audio Description:</strong> A short audio recording sharing my motivation for studying computer science and web development.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+            <h2>Contact Me</h2>
+            <p><em>Note: This contact form is for browser demonstration purposes only and does not transmit data.</em></p>
+            
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="topic">Topic:</label>
+                    <select id="topic" name="topic">
+                        <option value="general">General Inquiry</option>
+                        <option value="feedback">Website Feedback</option>
+                        <option value="academic">Academic Collaboration</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Innocent Mbalakawe. All Rights Reserved. ICT251 Web Technologies Activity 2.</p>
+    </footer>
+
+</body>
+</html>
